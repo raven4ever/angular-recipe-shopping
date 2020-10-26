@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -105,20 +106,9 @@
               "**/node_modules/**"
             ]
           }
-        },
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-recipe-shopping:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "angular-recipe-shopping:serve:production"
-            }
-          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-recipe-shopping"
 }
