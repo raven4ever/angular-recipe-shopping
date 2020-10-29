@@ -1,27 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Recipe Book</a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+          data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Recipes</a>
+        <a (click)="onSelect('recipe')" class="nav-link" href="#">Recipes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shopping List</a>
+        <a (click)="onSelect('shopping')" class="nav-link" href="#">Shopping List</a>
       </li>
     </ul>
 
     <ul class="navbar-nav">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink">
           Manage
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
           <a class="dropdown-item" href="#">Save Data</a>
           <a class="dropdown-item" href="#">Fetch Data</a>
         </div>
